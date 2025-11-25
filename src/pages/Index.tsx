@@ -26,6 +26,7 @@ const Index = () => {
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#benefits" className="hover:text-primary transition-colors">Преимущества</a>
+            <a href="#equipment" className="hover:text-primary transition-colors">Оборудование</a>
             <a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a>
             <a href="#industries" className="hover:text-primary transition-colors">Для кого</a>
             <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
@@ -152,6 +153,147 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <section id="equipment" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Наше оборудование
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Современные газопоршневые электростанции различной мощности
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <Card className="bg-card overflow-hidden">
+              <div className="aspect-video bg-muted/50 flex items-center justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/9c8d732d-4b4e-4621-b09a-17abfe236787.jpg" 
+                  alt="Газопоршневые установки 100-250 кВт"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl">Станции 100-250 кВт</CardTitle>
+                <CardDescription>
+                  Мощные генераторные установки для крупных промышленных объектов
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">100-250</div>
+                    <div className="text-sm text-muted-foreground">кВт мощность</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">90%</div>
+                    <div className="text-sm text-muted-foreground">КПД когенерации</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">24/7</div>
+                    <div className="text-sm text-muted-foreground">Непрерывная работа</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">IP23</div>
+                    <div className="text-sm text-muted-foreground">Защита корпуса</div>
+                  </div>
+                </div>
+                <Button className="w-full" variant="outline">
+                  <Icon name="FileText" className="mr-2" size={18} />
+                  Технические характеристики
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card overflow-hidden">
+              <div className="aspect-video bg-muted/50 flex items-center justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/84b4641f-416e-4598-8b99-6b898f1c0b9e.jpg" 
+                  alt="Газопоршневые установки 30-50 кВт"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl">Станции 30-50 кВт</CardTitle>
+                <CardDescription>
+                  Компактные установки для малых и средних предприятий
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">30-50</div>
+                    <div className="text-sm text-muted-foreground">кВт мощность</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">76%+</div>
+                    <div className="text-sm text-muted-foreground">КПД установки</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">230/400</div>
+                    <div className="text-sm text-muted-foreground">Напряжение, В</div>
+                  </div>
+                  <div className="bg-muted/50 p-4 rounded-lg">
+                    <div className="text-2xl font-bold text-primary">50 Hz</div>
+                    <div className="text-sm text-muted-foreground">Частота сети</div>
+                  </div>
+                </div>
+                <Button className="w-full" variant="outline">
+                  <Icon name="FileText" className="mr-2" size={18} />
+                  Технические характеристики
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-card/50 backdrop-blur border-primary/20">
+            <CardHeader>
+              <CardTitle className="text-2xl">Контейнерные установки</CardTitle>
+              <CardDescription>
+                Бесшумные контейнерные генераторные установки на природном газе для любых условий эксплуатации
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Package" className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-semibold mb-1">Мобильность</div>
+                    <div className="text-sm text-muted-foreground">
+                      Быстрое развертывание на любой площадке
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Volume2" className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-semibold mb-1">Шумоизоляция</div>
+                    <div className="text-sm text-muted-foreground">
+                      Уровень шума менее 80 дБ на расстоянии 1м
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Thermometer" className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-semibold mb-1">Всесезонность</div>
+                    <div className="text-sm text-muted-foreground">
+                      Работа при температуре от -40°C до +40°C
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -302,6 +444,38 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+
+          <div className="mt-16 text-center">
+            <Card className="bg-primary/5 border-primary/20 inline-block">
+              <CardContent className="pt-6">
+                <div className="flex flex-col md:flex-row items-center gap-6 px-4">
+                  <div className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="text-primary" size={28} />
+                    <div className="text-left">
+                      <div className="font-semibold">Индивидуальный подход</div>
+                      <div className="text-sm text-muted-foreground">Подберем оптимальную мощность</div>
+                    </div>
+                  </div>
+                  <div className="h-12 w-px bg-border hidden md:block"></div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Wrench" className="text-primary" size={28} />
+                    <div className="text-left">
+                      <div className="font-semibold">Полное сопровождение</div>
+                      <div className="text-sm text-muted-foreground">Установка, запуск, обслуживание</div>
+                    </div>
+                  </div>
+                  <div className="h-12 w-px bg-border hidden md:block"></div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Clock" className="text-primary" size={28} />
+                    <div className="text-left">
+                      <div className="font-semibold">Быстрый запуск</div>
+                      <div className="text-sm text-muted-foreground">От заявки до работы за 2 недели</div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -397,6 +571,7 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Меню</h3>
               <div className="space-y-2 text-muted-foreground">
                 <div><a href="#benefits" className="hover:text-primary transition-colors">Преимущества</a></div>
+                <div><a href="#equipment" className="hover:text-primary transition-colors">Оборудование</a></div>
                 <div><a href="#calculator" className="hover:text-primary transition-colors">Калькулятор</a></div>
                 <div><a href="#industries" className="hover:text-primary transition-colors">Для кого</a></div>
                 <div><a href="#contact" className="hover:text-primary transition-colors">Контакты</a></div>
