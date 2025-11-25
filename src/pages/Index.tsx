@@ -40,14 +40,14 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-block px-4 py-2 bg-primary/20 rounded-full text-sm font-semibold text-primary mb-4">
-              Аренда без капитальных затрат
+              Аренда или покупка — выбор за вами
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Энергия для вашего бизнеса{' '}
               <span className="text-gradient">−20% от тарифа</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Газопоршневые электростанции в аренду. Снижайте расходы на электричество с первого дня!
+              Газопоршневые электростанции в аренду или на покупку. Снижайте расходы на электричество с первого дня!
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mt-12">
@@ -249,51 +249,89 @@ const Index = () => {
             </Card>
           </div>
 
-          <Card className="bg-card/50 backdrop-blur border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-2xl">Контейнерные установки</CardTitle>
-              <CardDescription>
-                Бесшумные контейнерные генераторные установки на природном газе для любых условий эксплуатации
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Package" className="text-primary" size={20} />
+          <div className="grid lg:grid-cols-2 gap-8">
+            <Card className="bg-card/50 backdrop-blur border-primary/20">
+              <CardHeader>
+                <CardTitle className="text-2xl">Контейнерные установки</CardTitle>
+                <CardDescription>
+                  Бесшумные контейнерные генераторные установки на природном газе для любых условий эксплуатации
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Package" className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <div className="font-semibold mb-1">Мобильность</div>
+                      <div className="text-sm text-muted-foreground">
+                        Быстрое развертывание на любой площадке
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-semibold mb-1">Мобильность</div>
-                    <div className="text-sm text-muted-foreground">
-                      Быстрое развертывание на любой площадке
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Volume2" className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <div className="font-semibold mb-1">Шумоизоляция</div>
+                      <div className="text-sm text-muted-foreground">
+                        Уровень шума менее 80 дБ на расстоянии 1м
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Thermometer" className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <div className="font-semibold mb-1">Всесезонность</div>
+                      <div className="text-sm text-muted-foreground">
+                        Работа при температуре от -40°C до +40°C
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Volume2" className="text-primary" size={20} />
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30">
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <Icon name="ShoppingCart" className="text-primary" size={24} />
+                  <CardTitle className="text-2xl">Покупка оборудования</CardTitle>
+                </div>
+                <CardDescription className="text-base">
+                  Приобретайте электростанции в собственность с полной технической поддержкой
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="text-primary flex-shrink-0" size={20} />
+                    <span className="text-sm">Полное владение оборудованием без ежемесячных платежей</span>
                   </div>
-                  <div>
-                    <div className="font-semibold mb-1">Шумоизоляция</div>
-                    <div className="text-sm text-muted-foreground">
-                      Уровень шума менее 80 дБ на расстоянии 1м
-                    </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="text-primary flex-shrink-0" size={20} />
+                    <span className="text-sm">Гарантийное и постгарантийное обслуживание</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="text-primary flex-shrink-0" size={20} />
+                    <span className="text-sm">Запуск «под ключ» и обучение персонала</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Icon name="CheckCircle2" className="text-primary flex-shrink-0" size={20} />
+                    <span className="text-sm">Поставка запчастей и расходных материалов</span>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Thermometer" className="text-primary" size={20} />
-                  </div>
-                  <div>
-                    <div className="font-semibold mb-1">Всесезонность</div>
-                    <div className="text-sm text-muted-foreground">
-                      Работа при температуре от -40°C до +40°C
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                <Button className="w-full energy-glow mt-4">
+                  <Icon name="Calculator" className="mr-2" size={18} />
+                  Рассчитать стоимость покупки
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
